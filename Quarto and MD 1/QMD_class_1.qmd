@@ -22,6 +22,7 @@ library(reticulate)
 
 At the very top. Stores author and document information, configuration, global options, inputs, styles, format specifications, etc. This document uses:
 
+```{=html}
 <pre class="code-block">
 ---
 title: "Quarto"
@@ -32,7 +33,7 @@ execute:
   echo: fenced
 ---
 </pre>
-
+```
 ## Markdown
 
 The markup language, with easy and nice editing options.
@@ -53,7 +54,7 @@ Let's start with Markdown!
 
 Consider the Source vs Visual mode and Rendering on Save options.
 
----
+------------------------------------------------------------------------
 
 # Cheatsheets are handy as always
 
@@ -188,7 +189,7 @@ You can also just use html to write stuff within the Markdown document (when ren
 |------------------------------------------------------------------------|
 | [![Official YAML Logo.svg](//upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Official_YAML_Logo.svg/64px-Official_YAML_Logo.svg.png){alt="Official YAML Logo.svg"}](/wiki/File:Official_YAML_Logo.svg) |
 | [Filename extensions](/wiki/Filename_extension "Filename extension")                                                                                                                                     |
-| [Internet media type](/wiki/Media_type "Media type")                                                                                                                                                     |
+| [Internet media type](/wiki/Media_type "Media type")                                                                                                                                                    |
 | Initial release                                                                                                                                                                                          |
 | [Latest release](/wiki/Software_release_life_cycle "Software release life cycle")                                                                                                                        |
 | Type of format                                                                                                                                                                                           |
@@ -214,7 +215,6 @@ cat("This is a code chunk")
 ```
 
 (Also see running within the editor mode)
-
 
 ```{r}
 summary(cars)
@@ -298,7 +298,7 @@ ggplot(mpg, aes(x=hwy, y=cty, color=cyl)) +
   theme_minimal()
 ```
 
-And you can refer to @fig-cars (`@fig-cars`) in-text! 
+And you can refer to @fig-cars (`@fig-cars`) in-text!
 
 You can also control the layout:
 
