@@ -32,8 +32,7 @@ b99 <- data.frame(Season, Total_viewers)
 plot(b99$Season, b99$Total_viewers, type = "o", xlab = "Season", ylab = "Total vewers in million", main = "Brookly Nine Nine Viewership")
 
 ```
-
-
+The viewership decreased from **`r  b99$Total_viewers[1]`** to **`r  b99$Total_viewers[7]`** in `r b99$Season[7] - b99$Season[1]` seasons.
 
 
 
