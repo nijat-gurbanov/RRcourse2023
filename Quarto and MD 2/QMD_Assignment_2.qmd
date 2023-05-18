@@ -1,0 +1,60 @@
+---
+title: "QMD Assignment 2"
+author: "Nijat Gurbanov (444424)"
+date: "18/05/2023"
+format: 
+  html: 
+    toc: true
+    toc-depth: 2
+    toc-expand: 3
+    toc-title: Contents
+    toc-location: left
+    theme: superhero
+    title-block-banner: true
+  docx: default
+---
+
+## Brooklyn Nine-Nine
+
+**Brooklyn Nine-Nine** is an American police procedural comedy television series which premiered on September 17, 2013, on Fox. The series, created by *Dan Goor* and *Michael Schur*, follows a team of detectives and a newly appointed captain in the 99th Precinct of the New York City Police Department in Brooklyn. In May 2018, Fox canceled the series; the following day, NBC picked up the series. During the course of the series, 153 episodes of **Brooklyn Nine-Nine** aired over eight seasons, between September 17, 2013, and September 16, 2021.
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Brooklyn_Nine-Nine_Logo.png/375px-Brooklyn_Nine-Nine_Logo.png)
+
+## Summary Statistics
+
+| Season | Episodes | Originally Aired | Rank | Total viewers |
+|--------|----------|------------------|------|---------------|
+|    1   |    22    |        2013      |  98  |      4.80     |
+|    2   |    23    |        2014      | 113  |      4.87     |
+|    3   |    23    |        2015      | 118  |      3.98     |
+|    4   |    22    |        2016      | 137  |      2.87     |
+|    5   |    22    |        2017      | 161  |      2.71     |
+|    6   |    18    |        2019      | 138  |      3.11     |
+|    7   |    13    |        2020      | 105  |      2.69     |
+|    8   |    10    |        2021      |   -  |        -      |
+
+::: {.panel-tabset}
+
+## Plot of viewership across seasons
+```{r}
+Season <- c(1:7)
+Total_viewers <- c(4.80,4.87,3.98,2.87,2.71,3.11,2.69)
+b99 <- data.frame(Season, Total_viewers)
+
+plot(b99$Season, b99$Total_viewers, type = "o", xlab = "Season", ylab = "Total vewers in million", main = "Brookly Nine Nine Viewership")
+
+```
+The viewership decreased from **`r  b99$Total_viewers[1]`** to **`r  b99$Total_viewers[7]`** in `r b99$Season[7] - b99$Season[1]` seasons.
+
+## Plot of viewership across years
+```{r}
+Year <- c(2013:2017, 2019, 2020)
+Total_viewers <- c(4.80,4.87,3.98,2.87,2.71,3.11,2.69)
+b99 <- data.frame(Year, Total_viewers)
+
+plot(b99$Year, b99$Total_viewers, type = "o", xlab = "Year", ylab = "Total vewers in million", main = "Brookly Nine Nine Viewership")
+
+```
+The viewership decreased from **`r  b99$Total_viewers[1]`** to **`r  b99$Total_viewers[7]`** in `r b99$Year[7] - b99$Year[1]` seasons.
+:::
+
