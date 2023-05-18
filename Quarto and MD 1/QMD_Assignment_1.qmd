@@ -24,6 +24,14 @@ format: html
 |    7   |    13    |        2020      | 105  |      2.69     |
 |    8   |    10    |        2021      |   -  |        -      |
 
+```{r}
+Season <- c(1:7)
+Total_viewers <- c(4.80,4.87,3.98,2.87,2.71,3.11,2.69)
+b99 <- data.frame(Season, Total_viewers)
+
+plot(b99$Season, b99$Total_viewers, type = "o", xlab = "Season", ylab = "Total vewers in million", main = "Brookly Nine Nine Viewership")
+
+```
 
 
 
